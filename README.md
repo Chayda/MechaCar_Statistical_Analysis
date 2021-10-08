@@ -24,22 +24,22 @@ As per the lot_summary dataframe, the variance of the suspension coils for Lots 
 
 ## t-Tests on Suspension Coils
 ### Assuming significance value of 0.05:
-### POPULATION
+#### POPULATION
 ![t_test_population](https://user-images.githubusercontent.com/74624855/136634689-1ba465fb-3695-4133-b13a-e718d7bee79c.png)
 
 The p-value of the population t-test is 0.06028, which is higher than the significance value, which means the null hypothesis remains intact and there is no significant relationship.
 
-### MANUFACTURING LOT 1
+#### MANUFACTURING LOT 1
 ![t_test_lot1](https://user-images.githubusercontent.com/74624855/136634747-194f3b72-129c-425b-beea-6ba1c8146450.png)
 
 The p-value of the Lot-1 test is 1, which is above the significance value; meaning the null hypothesis remains intact and there is no significant difference.
 
-### MANUFACTURING LOT 2
+#### MANUFACTURING LOT 2
 ![t_test_lot2](https://user-images.githubusercontent.com/74624855/136634795-997d435e-de8b-4c09-9d60-ed11b8c75245.png)
 
 The p-value of the Lot-2 test is 0.6072, which is above the significance value; meaning the null hypothesis remains intact and there is no significant difference.
 
-### MANUFACTURING LOT 3
+#### MANUFACTURING LOT 3
 ![t_test_lot3](https://user-images.githubusercontent.com/74624855/136634806-a3a9b149-c774-411a-a5cf-df4a53c30638.png)
 
 The p-value of the Lot-3 test is 0.04168, which is below the significance value; meaning there is sufficient evidence to reject the null hypothesis. There is a statistical difference between the mean of Lot-3 and the population, indicating there is a problem with this lot.
