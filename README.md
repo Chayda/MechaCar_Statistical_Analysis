@@ -5,3 +5,6 @@ The suspension coil dataset (Suspension_Coil.csv) contains the following variabl
 This analysis will review production data for insights that might help the manufacturing team.
 
 ## Linear Regression to Predict MPG
+![1_LinRegress](https://user-images.githubusercontent.com/74624855/136588416-3eff48b4-57f5-45b9-8a0b-28a1515ebd59.png)
+
+
