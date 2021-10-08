@@ -17,11 +17,12 @@ Using multiple linear regression analysis to identify which variables in the dat
 
 As per the total_summary dataframe which gathers summary statistics for all three lots combined, the variance is 62.29, which does not exceed 100 ppi, but required a more in-depth look at the variance for each individual lot to see if there’s a difference between each lot.
 
+
 ![2b_lot_summary](https://user-images.githubusercontent.com/74624855/136634656-8f9d4666-70f0-4b9c-8258-09556544f7c8.png)
 
 As per the lot_summary dataframe, the variance of the suspension coils for Lots 1 & 2 do not exceed the manufacturing design specification of 100 ppi (0.98 and 7.47, respectively); however, the variance of the suspension coils for Lot 3 is 170.29, which far exceeds 100 ppi.
 
-## T-Tests on Suspension Coils
+## t-Tests on Suspension Coils
 ### Assuming significance value of 0.05:
 ### POPULATION
 ![t_test_population](https://user-images.githubusercontent.com/74624855/136634689-1ba465fb-3695-4133-b13a-e718d7bee79c.png)
@@ -44,3 +45,31 @@ The p-value of the Lot-2 test is 0.6072, which is above the significance value; 
 The p-value of the Lot-3 test is 0.04168, which is below the significance value; meaning there is sufficient evidence to reject the null hypothesis. There is a statistical difference between the mean of Lot-3 and the population, indicating there is a problem with this lot.
 
 ## Study Design: MechaCar vs. Competition
+Study to determine if the MechaCar is more fuel-efficient and powerful on the highway than the top-five competitor models. If the MechaCar is more fuel-efficient than its competitors, it would be more appealing to customers (especially those who commute to work) as it would result in long-term savings on fuel.
+
+### METRICS:
+#### Fuel Efficiency - 
+is a quantitative data type, measured in L/100 km; is the capacity of an engine to obtain energy from fuel. A fuel-efficient vehicle requires less fuel to go a certain distance.
+#### Horsepower - 
+is a quantitative data type, measured in watts (unit of power); tells the power of an engine. Horsepower indicates performance of a vehicle, as an engine with more horsepower will accelerate more quickly, which is important for vehicles entering on-ramps on the highway.
+#### Price -
+is a quantitative data type, measured in CAD; the price of the MechaCar can be compared directly with the top 3 competitor models.
+
+### HYPOTHESIS:
+#### Null Hypothesis -
+If we collect metrics around highway fuel-efficiency and horsepower for the MechaCar and its top 5 competitors there is no difference between the highway fuel-efficiency of the MechaCar vs the competitor models.
+#### Alternative Hypothesis -
+If we collect metrics around highway fuel-efficiency and horsepower for the MechaCar and its top 5 competitors, then on average the highway fuel-efficiency (L per 100 km) should be significantly higher than the competitor models.
+
+### STATISTICAL TESTS:
+#### Multiple Linear Regression -
+for fuel-efficiency vs horsepower and price– to see if there’s a relationship between horsepower and highway fuel efficiency for each model. This test will determine how much variance in the dependent variable (highway fuel efficiency) is accounted for in a linear combination of independent variables (horsepower and price).
+#### t-Tests -
+for each: MechaCar, and all five competitor models to determine if there is a statistical difference in the mean of the sample distribution and the mean of the population distribution by looking at the p-values to determine where they fall in regards to a significance value of 0.05.
+
+### DATA REQUIREMENTS:
+Collection of data (or sample data) from MechaCar and its top-5 competitor models, gathering data regarding characteristics such as distance travelled, highway fuel efficiency, horsepower of vehicle, and price. 
+
+
+
+
